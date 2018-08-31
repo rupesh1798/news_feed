@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+   <body>
+   
+      <table border = 1>
+         {% for key, value in dic.items() %}
+         
+            <tr>
+               <th> {{ key }} </th>
+               <td> {{ value[0] }} </td>
+               <td> {{ value[1] }} </td>  
+               <td> {{ value[2] }} </td>              
+            </tr>
+            
+         {% endfor %}
+      </table>
+      
+   </body>
+</html>
