@@ -3,17 +3,24 @@
    <body>
    
       <table border = 1>
-         {% for key, value in dic.items() %}
-         
-            <tr>
-               <th> {{ key }} </th>
-               <td> {{ value[0] }} </td>
-               <td> {{ value[1] }} </td>  
-               <td> {{ value[2] }} </td>              
+        <tr>
+                <th>Title</th>
+                <th>Summary</th>
+                <th>Link</th>
+                <th>Date</th>
             </tr>
-            
+         {% for key, value in dic.items() %}
+
+            <td>
+
+               <td> {{ value[0] }} </td>
+               <td> {{ value[1] }} </td>
+                <td><a target="_blank" href={{ value[2] }}>{{ value[2] }}</a></td>
+                <td> {{ value[3] }} </td>
+            </tr>
+
          {% endfor %}
       </table>
-      
+    <img src="http://feeds.feedburner.com/~r/EducationWeekSpecialEducation/~4/ee9gJ6XCCkU" height="1" width="1" alt=""/>
    </body>
 </html>
